@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="bottom"
+    android:padding="25dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@drawable/headerbkg">
+
+    <!--
+    android:theme="@style/ThemeOverlay.AppCompat.Dark": tạo một giao diện tối (dark theme) cho phần tử
+    -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aklogo"/>
+    <!--
+     android:src="@drawable/aklogo": thêm hình ảnh từ đường dẫn
+   -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HuynhBaTuongVi"
+        android:textSize="20dp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yellow"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="85dp"
+            android:layout_marginTop="5dp"
+            android:text="Device Activity"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imagedevice"
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:contentDescription="Room Image"
+            android:src="@drawable/ceiling_lamp" />
+
+        <!--
+    android:contentDescription="Room Image":mô tả nội dung của hình ảnh
+    android:src="@drawable/ceiling_lamp":xác định nguồn hình ảnh để hiển thị
+       -->
+
+
+        <SeekBar
+            android:id="@+id/seekbar_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:thumb="@drawable/seekbar_custom"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imagedevice"
+            android:max="255" />
+
+        <!--
+    android:thumb="@drawable/seekbar_custom":tạo giao diện nút kéo
+    android:progressDrawable="@drawable/seekbar_progress":tạo giao diện mới thanh ngang seekbar
+     android:max="255": giá trị lớn nhất thanh seekbar
+        -->
+
+    </RelativeLayout>
+
+</FrameLayout>

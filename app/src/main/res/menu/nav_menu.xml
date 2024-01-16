@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <!--
+    tools:showIn = "navigation_view": hiển thị menu trong giao diện
+    -->
+
+    <group
+        android:checkableBehavior="single">
+        <!--
+          android:checkableBehavior="single": cho phép chọn một mục menu duy nhất
+        -->
+
+        <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+
+        <!--
+        android:id: ID của mục menu.
+        android:icon: biểu tượng hiển thị bên cạnh mục menu.
+        android:title: tiêu đề của mục menu.
+      -->
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/nav_settings"
+            android:title="Settings"/>
+
+
+    </group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/drawer_logout"
+                android:title="Log out"/>
+        </menu>
+
+    </item>
+
+
+</menu>
